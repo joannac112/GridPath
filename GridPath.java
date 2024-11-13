@@ -15,10 +15,6 @@ public class GridPath {
         }
         return s;
     }
-    public String toString()
-    {
-        return theRow + ", " + theCol;
-    }
     /**
      * Returns the Location representing a neighbor of the grid element at row and
      * col,
@@ -47,6 +43,13 @@ public class GridPath {
      * grid.
      */
     public int sumPath(int row, int col) {
-        return 0;
+        int sum = grid[row][col];
+        while(row <grid.length -1 || col < grid[0].length -1){
+            Location loc = getNextLoc(row, col);
+            row = loc.getRow();
+            col = loc.getCol();
+            sum+= grid[row][col];
+        }
+        return sum;
         /* to be implemented in part (b) */ }
 }
