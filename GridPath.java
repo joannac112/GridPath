@@ -1,9 +1,9 @@
 public class GridPath {
     /** Initialized in the constructor with distinct values that never change */
     private int[][] grid;
-    public Gridpath(int[][] values) 
+    public GridPath(int[][] values) 
     {
-        grid = values;
+       grid = values;
     }
     public String toString() {
         String s = "";

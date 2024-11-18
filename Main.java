@@ -25,5 +25,6 @@ public class Main
         };
         GridPath two = new GridPath(secondGrid);
         System.out.println(two);
+        System.out.println(two.sumPath(1, 1));
     }
 }
